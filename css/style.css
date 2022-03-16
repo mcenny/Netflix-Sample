@@ -1,0 +1,66 @@
+body{
+    background-color: black;
+    color: #e8e6e3;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.levelOneHeading {
+    font-size: 72px;
+    font-weight: 900;
+}
+
+#frequentlyAskedQuestions h1 {
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+#frequentlyAskedQuestions {
+    width: 70%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.Question {
+    background-color: #242729;
+    padding: 18px 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer {
+    background-color: #242729;
+    padding-right: 24px;
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    margin-top: 2px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s linear;
+}
+
+.Question img {
+    height: 24px;
+    width: 24px;
+    transition: all 0.2s linear;
+}
+
+#accordion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
