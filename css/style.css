@@ -1,9 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    max-width: 100%;
+}
+
+
 body{
     background-color: black;
-    color: #e8e6e3;
+    color: #ffffff;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
 }
 
 p{
@@ -13,9 +27,19 @@ p{
     line-height: 1.5;
 }
 
-.levelOneHeading {
-    font-size: 72px;
+.levelOneFontSize {
+    font-size: 48px;
     font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.levelThreeFontSize{
+    font-size: 16px;
+}
+
+.levelFourFontSize{
+    font-size: 12px;
 }
 
 #frequentlyAskedQuestions h1 {
@@ -25,7 +49,7 @@ p{
 }
 
 #frequentlyAskedQuestions {
-    width: 70%;
+    /*width: 70%;*/
     display: flex;
     margin: auto;
     flex-direction: column;
@@ -64,3 +88,207 @@ p{
     gap: 8px;
 }
 
+.wrapper{
+    padding: 70px 15%;
+    display: flex;
+    border-top: #222 solid 8px;
+}
+
+#netflixLogo {
+    width: 135px;
+    height: 45px;
+
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    padding-top: 18px;
+    width: 95%;
+    margin: 0 auto;
+    flex-grow: 0;
+}
+
+.navBar button {
+    width: 90px;
+    height: 36px;
+    color: #e8e6e3;
+    font-size: 16px;
+    font-weight: 200;
+    background-color: #e50914;
+    border-style: none;
+    border-radius: 2px;
+    margin-bottom: 0;
+
+}
+
+.headerSection {
+    height: 700px;
+    background-image: url('../img/Header Image.pg');
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    border-top: none;
+    align-items: center;
+    text-align: center;
+    gap: 18px;
+    margin-bottom: 0;
+    flex-grow: 1;
+    justify-content: center;
+    
+}
+
+.welcomeIntro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 24px;
+    
+}
+
+.welcomeIntro p {
+    margin-bottom: 24px;
+    padding: 0 20%;
+}
+
+.sixtyPercentWidth{
+    /*width: 60%;*/
+}
+
+.signUpSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    width: 100%;
+    padding: 0 10%;
+
+}
+
+input{
+    height: 64px;
+    width: 70%;
+    max-width: 100%;
+    background-color: #e8e6e3;
+    color: #8c8c8c;
+    padding-left: 12px;
+    flex-shrink: 0;
+    margin-bottom: 24px;
+    border-radius: 2px;
+    border-style: none;
+    
+}
+
+input:focus{
+    outline: none;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    width: 30%;
+    min-width: 100px;
+    background-color: #e50914;
+    color: #e8e6e3;
+    border-style: none;
+    border-radius: 2px;
+    margin-bottom: 24px;
+    font-size: 24px;
+}
+
+.signUpSection p {
+    margin: 0;
+    padding: 0;
+}
+
+.streamingPlatform, .downloadSection, .watchHere, .profileForKids{
+    padding: 0 15%;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+
+}
+
+.wrapper.watchHere {
+    justify-content: flex-start;
+}
+
+.wrapper.watchHere div {
+    /*width: 50%;*/
+}
+
+.downlaodSedtion{
+    
+    
+}
+
+.downloadingVisual{
+    background-image: url(../img/mobile.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right:auto;
+    align-self: flex-start;
+
+}
+
+.DownloadingVisualText{
+    width: 50%;
+    margin-bottom: 64px;
+}
+
+#downloadingAni{
+    width: 300px;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: black;
+    border: #242729 solid 2px;
+    margin-bottom: 64px;
+    border-radius: 8px;
+}
+
+#downloadingAni img {
+    width: 50px;
+    height: 70px;
+}
+
+.signUpSection img {
+    width: 18px;
+    height: 18px;
+    margin-left: 8px;
+}
+
+#downloadingProgressIcon{
+    width: 10%;
+    height: 10%;
+}
+
+#downloadingMovieTitle{
+    font-size: 18px;
+    margin-bottom: -4px;
+}
+
+.downloadingMovieStatus{
+    font-size: 14px;
+    color: #0071eb;
+}
+
+.downlaodingAni div{
+    margin-right: auto;
+}

@@ -5,33 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
+    <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <!-- Header here -->
-
-    <div class="wrapper" id="header">
+    <div class="headerSection">
         <div class="navBar">
             <img src="img/Netflix-Logo.svg" alt="Netflix Logo" id="netflixLogo">
             <button>Sign In</button>
         </div>
-        <div class="welcomeIntro">
-            <p>Unlimited movies, TV shows and more.</p>
-            <p>Watch anywhere. cancel anytime.</p>
-            <p>Ready to watch? Enter your email to create or restart your membership.</p>
-            <div>
-                <input type="text" value="Email address">
-                <button>Finish Sign Up <i class="fi fi-rs-angle-right"></i> </button>
+        <div class="wrapper header">
+            
+            <div class="welcomeIntro">
+                <p class="levelOneFontSize sixtyPercentWidth">Unlimited movies, TV shows and more.</p>
+                <p class="sixtyPercentWidth">Watch anywhere. cancel anytime.</p>
+                <p class="levelThreeFontSize sixtyPercentWidth">Ready to watch? Enter your email to create or restart your membership.</p>
+                <div class="signUpSection">
+                    <input type="text" value="Email address">
+                    <button>Get Started<img src="img/angle-right.svg" alt=""></button>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Streaming platforms -->
 
-    <div class="wrapper">
+    <div class="wrapper streamingPlatform">
         <div class="streamingPlatformText">
-            <p>Enjoy on your TV.</p>
+            <p class="levelOneFontSize">Enjoy on your TV.</p>
             <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
         </div>
         <div class="streamingPlatformImage">
@@ -41,44 +44,47 @@
 
     <!-- Download section -->
 
-    <div class="wrapper">
+    <div class="wrapper downloadSection">
         <div class="downloadingVisual">
-            <img src="img/mobile.jpg" alt="Visual of Netflix on Mobile">
+            <!-- <img src="img/mobile.jpg" alt="Visual of Netflix on Mobile"> -->
+
             <div id="downloadingAni">
                 <img src="img/boxshot.png" alt="Sample Movie poster">
                 <div>
-                    <P>Stranger Things</P>
-                    <P>Downloading...</P>
+                    <P id="downloadingMovieTitle">Stranger Things</P>
+                    <P id="downloadingMovieStatus">Downloading...</P>
                 </div>
-                <img src="" alt="Downloading animation">
+                <img src="img/download.svg" alt="Downlading Progress" class="downloadingProgressIcon">
             </div>
         </div>
         <div class="DownloadingVisualText">
-            <p>Download your shows to watch offline.</p>
+            <p class="levelOneFontSize">Download your shows to watch offline.</p>
             <p>Save your favorites easily and always have something to watch.</p>
         </div>
     </div>
 
     <!-- Watch Everywhere -->
 
-    <div class="wrapper">
-        <p>Watch everywhere.</p>
-        <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+    <div class="wrapper watchHere">
+        <div>
+            <p class="levelOneFontSize">Watch everywhere.</p>
+            <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+        </div>
     </div>
 
     <!-- Create profiles for kids -->
 
-    <div class="wrapper">
+    <div class="wrapper profileForKids">
         <img src="img/Kids.png" alt="Sign up for kids">
         <div class="kidsSignupText">
-            <p>Create profiles for kids.</p>
+            <p class="levelOneFontSize">Create profiles for kids.</p>
             <p>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
         </div>
     </div>
 
     <!-- Frequently asked questions -->
 
-    <div class="wrapper" id="frequentlyAskedQuestions">
+    <div class="wrapper frequentlyAskedQuestions" id="frequentlyAskedQuestions">
         <h1 class="levelingOneHeading">Frequently Asked Questions</h1>
         <div id="accordion">
 
@@ -151,9 +157,11 @@
                 <div></div>
             </div>
 
-            <div>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+
+            <div class="signUpSection">
                 <input type="text" value="Email address">
-                <button>Finish Sign Up <i class="fi fi-rs-angle-right"></i> </button>
+                <button>Get Started<img src="img/angle-right.svg" alt=""></button>
             </div>
 
         </div>
