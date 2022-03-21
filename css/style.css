@@ -1,294 +1,403 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-html{
-    max-width: 100%;
+html {
+  font-size: 10px;
 }
 
-
-body{
-    background-color: black;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
+body {
+  max-width: 100%;
 }
 
-p{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  /* line-height: 2; */
+}
+
+h1 {
+  font-size: 6.5rem;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+.section {
+  background-color: black;
+  color: #ffffff;
+  font-family: sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+#netflixLogo {
+  width: 135px;
+  height: 45px;
+}
+
+/* p {
     padding: 0;
     margin: 0;
     font-size: 24px;
     line-height: 1.5;
-}
-
-.levelOneFontSize {
+  }
+  
+  .levelOneFontSize {
     font-size: 48px;
     font-weight: 900;
     line-height: 1.1;
     margin-bottom: 24px;
-}
-
-.levelThreeFontSize{
+  }
+  
+  .levelThreeFontSize {
     font-size: 16px;
-}
-
-.levelFourFontSize{
+  }
+  
+  .levelFourFontSize {
     font-size: 12px;
+  } */
+
+.headerSection {
+  width: 100%;
+  height: 100%;
+  min-height: 700px;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.8)),
+    url("../img/hero.jpg");
+  /* background-size: contain; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
 }
 
-#frequentlyAskedQuestions h1 {
-    text-align: center;
-    margin-top: 24px;
-    margin-bottom: 24px;
-}
-
-#frequentlyAskedQuestions {
-    /*width: 70%;*/
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-}
-
-.Question {
-    background-color: #242729;
-    padding: 18px 24px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.answer {
-    background-color: #242729;
-    padding-right: 24px;
-    padding-left: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 36px;
-    margin-top: 2px;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.2s linear;
-}
-
-.Question img {
-    height: 24px;
-    width: 24px;
-    transition: all 0.2s linear;
-}
-
-#accordion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-}
-
-.wrapper{
-    padding: 70px 15%;
-    display: flex;
-    border-top: #222 solid 8px;
-}
-
-#netflixLogo {
-    width: 135px;
-    height: 45px;
-
-}
+/* .wrapper {
+  padding: 70px 15%;
+  display: flex;
+  border-top: #222 solid 8px;
+  align-items: center;
+} */
 
 .navBar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center ;
-    padding-top: 18px;
-    width: 95%;
-    margin: 0 auto;
-    flex-grow: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 18px;
+  width: 95%;
+  margin: 0 auto;
+  flex-grow: 0;
 }
 
 .navBar button {
-    width: 90px;
-    height: 36px;
-    color: #e8e6e3;
-    font-size: 16px;
-    font-weight: 200;
-    background-color: #e50914;
-    border-style: none;
-    border-radius: 2px;
-    margin-bottom: 0;
-
-}
-
-.headerSection {
-    height: 700px;
-    background-image: url('../img/Header Image.pg');
-    background-size: contain;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  width: 90px;
+  height: 36px;
+  color: #e8e6e3;
+  font-size: 16px;
+  font-weight: 200;
+  background-color: #e50914;
+  border-style: none;
+  border-radius: 2px;
+  min-width: 100px;
 }
 
 .header {
-    display: flex;
-    flex-direction: column;
-    border-top: none;
-    align-items: center;
-    text-align: center;
-    gap: 18px;
-    margin-bottom: 0;
-    flex-grow: 1;
-    justify-content: center;
-    
+  display: flex;
+  flex-direction: column;
+  border-top: none;
+  align-items: center;
+  text-align: center;
+  gap: 18px;
+  flex-grow: 1;
+  justify-content: center;
+  margin: auto;
+  height: 100%;
+  width: 100%;
 }
 
-.welcomeIntro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 24px;
-    
+.welcomeIntro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
 }
 
 .welcomeIntro p {
-    margin-bottom: 24px;
-    padding: 0 20%;
+  margin-bottom: 24px;
 }
 
-.sixtyPercentWidth{
-    /*width: 60%;*/
+.welcomeIntro h3 {
+  font-size: 1.8rem;
+  margin-bottom: 24px;
 }
 
 .signUpSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1px;
-    width: 100%;
-    padding: 0 10%;
-
+  display: flex;
+  justify-content: center;
+  gap: 1px;
+  padding: 0 10%;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-input{
-    height: 64px;
-    width: 70%;
-    max-width: 100%;
-    background-color: #e8e6e3;
-    color: #8c8c8c;
-    padding-left: 12px;
-    flex-shrink: 0;
-    margin-bottom: 24px;
-    border-radius: 2px;
-    border-style: none;
-    
+input {
+  height: 64px;
+  width: 350px;
+  min-width: 100px;
+  background-color: #e8e6e3;
+  color: #8c8c8c;
+  padding-left: 12px;
+  padding-right: 12px;
+  flex-shrink: 0;
+  margin-bottom: 24px;
+  border-radius: 2px;
+  border-style: none;
 }
 
-input:focus{
-    outline: none;
+input:focus {
+  outline: none;
 }
 
-button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 64px;
-    width: 30%;
-    min-width: 100px;
-    background-color: #e50914;
-    color: #e8e6e3;
-    border-style: none;
-    border-radius: 2px;
-    margin-bottom: 24px;
-    font-size: 24px;
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  width: 30%;
+  min-width: 100px;
+  background-color: #e50914;
+  color: #e8e6e3;
+  border-style: none;
+  border-radius: 2px;
+  margin-bottom: 24px;
+  font-size: 24px;
+  padding: auto 12px;
 }
 
-.signUpSection p {
-    margin: 0;
-    padding: 0;
+.wrapper {
+  width: 100%;
+  border-top: 8px solid #222222;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 70px 15%;
 }
 
-.streamingPlatform, .downloadSection, .watchHere, .profileForKids{
-    padding: 0 15%;
-    display: flex;
-    align-items: center;  
-    justify-content: center;
-
+.wrapper p {
+  margin-top: 10px;
+  font-size: 2.4rem;
 }
 
-.wrapper.watchHere {
-    justify-content: flex-start;
+.wrapper h1 {
+  font-size: 5rem;
 }
 
-.wrapper.watchHere div {
-    /*width: 50%;*/
+.streamingPlatformImage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.streamingPlatformImage .tvFrame {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  height: autox;
+  flex-shrink: 1;
+  flex-grow: 1;
 }
 
-.downlaodSedtion{
-    
-    
+.tvAnimation {
+  position: absolute;
+  top: 113%;
+  left: 50%;
+  flex-shrink: 1;
+  flex-grow: 1;
 }
 
-.downloadingVisual{
-    background-image: url(../img/mobile.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    margin-right:auto;
-    align-self: flex-start;
-
+.downloadSection {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 
-.DownloadingVisualText{
-    width: 50%;
-    margin-bottom: 64px;
+.downloadAnimationBox {
+  width: 350px;
+  height: 90px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 5px;
+  background-color: black;
+  border: #242729 solid 2px;
+  margin-bottom: 12px;
+  border-radius: 8px;
 }
 
-#downloadingAni{
-    width: 300px;
-    height: 90px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-    background-color: black;
-    border: #242729 solid 2px;
-    margin-bottom: 64px;
-    border-radius: 8px;
+.downloadVisualAnimation {
+  background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.95)),
+    url(../img/mobile.jpg);
+  height: 350px;
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-#downloadingAni img {
-    width: 50px;
-    height: 70px;
+.sampleMoviePoster {
+  width: 50px;
+  height: 70px;
+  margin-right: 8px;
 }
+
+.downloadAnimationGif {
+  width: 50px;
+  height: 50px;
+}
+
+.sampleMoviePosterText {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sampleMoviePosterText .downloadMovieTitle {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+}
+
+.sampleMoviePosterText .downloadingMovieStatus {
+  font-size: 1.4rem;
+  color: #0071eb;
+  margin: 0;
+}
+
+.watchHere div {
+  width: 50%;
+  margin-right: auto;
+}
+
+#frequentlyAskedQuestions {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  padding: 72px 25%;
+}
+
+.frequentlyAskedQuestions h1 {
+  margin-bottom: 36px;
+  font-size: 5rem;
+}
+
+.Question {
+  background-color: #242729;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.answer {
+  background-color: #242729;
+  padding-right: 24px;
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-top: 2px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s linear;
+}
+
+.Question img {
+  height: 24px;
+  width: 24px;
+  transition: all 0.2s linear;
+}
+
+#accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 48px;
+}
+
+.accordionSignUpSection {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.accordionSignUpSection .levelThreeFontSize {
+  margin: auto;
+  font-size: 18px;
+}
+
+.footer {
+  color: #757575;
+  font-size: 12px;
+  line-height: 2.5;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  padding: 72px 20%;
+}
+
+.footer .levelThreeFontSize {
+  font-weight: 400;
+}
+
+.siteMap {
+  display: flex;
+  gap: 128px;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer p {
+  font-size: 1.6rem;
+}
+
+/* 
 
 .signUpSection img {
-    width: 18px;
-    height: 18px;
-    margin-left: 8px;
+  width: 18px;
+  height: 18px;
+  margin-left: 8px;
 }
 
-#downloadingProgressIcon{
-    width: 10%;
-    height: 10%;
-}
-
-#downloadingMovieTitle{
-    font-size: 18px;
-    margin-bottom: -4px;
-}
-
-.downloadingMovieStatus{
-    font-size: 14px;
-    color: #0071eb;
-}
-
-.downlaodingAni div{
-    margin-right: auto;
-}
+ */
