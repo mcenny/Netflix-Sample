@@ -200,7 +200,10 @@ button {
   align-items: center;
   justify-content: space-around;
   padding: 70px 15%;
+  background-color: #000;
+
 }
+
 
 .wrapper p {
   margin-top: 10px;
@@ -216,7 +219,7 @@ button {
   align-items: center;
   justify-content: space-between;
 }
-.streamingPlatformImage .tvFrame {
+.streamingPlatformImage{
   position: relative;
   z-index: 2;
   max-width: 100%;
@@ -225,12 +228,17 @@ button {
   flex-grow: 1;
 }
 
+.tvFrame {
+  z-index: 2;
+}
+
+
+
+
 .tvAnimation {
   position: absolute;
-  top: 113%;
-  left: 50%;
-  flex-shrink: 1;
-  flex-grow: 1;
+  top: 20%;
+  left: 12%;
 }
 
 .downloadSection {
@@ -382,6 +390,7 @@ button {
 .siteMap {
   display: flex;
   gap: 128px;
+  flex-wrap: wrap;
 }
 
 ul {
@@ -391,6 +400,7 @@ ul {
 .footer p {
   font-size: 1.6rem;
 }
+
 
 /* 
 
